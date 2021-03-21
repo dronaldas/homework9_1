@@ -1,19 +1,49 @@
 body {
     background: rgba(226, 152, 245, 0.63);
 }
+h2 {
+    margin-top: 0;
+}
 .blogs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-.blogs div {
+.blogs .post {
     width: 400px;
     margin: 10px;
     background: #fff;
 }
 .post1 {
     flex-grow: 3;
+    display: flex;
 }
+img {
+    width: 100%;
+    height: auto;
+}
+.content {
+    padding: 18px;
+}
+.post1 .image {
+    display: flex;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .post1 {
+      flex-direction: column;
+    }
+    .blogs {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+  }
