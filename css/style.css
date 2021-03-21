@@ -1,0 +1,19 @@
+body {
+    background: rgba(226, 152, 245, 0.63);
+}
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.blogs div {
+    width: 400px;
+    margin: 10px;
+    background: #fff;
+}
+.post1 {
+    flex-grow: 3;
+}
