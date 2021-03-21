@@ -57,11 +57,9 @@ img {
 
 
 @media (max-width: 600px) {
-    .post1 {
-      flex-direction: column;
-    }
     .blogs {
         padding-left: 5px;
         padding-right: 5px;
+        flex-direction: column;
     }
   }
