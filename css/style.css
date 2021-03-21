@@ -4,40 +4,31 @@ body {
 h2 {
     margin-top: 0;
 }
-.blogs {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    /* align-items: center; */
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.blogs .post {
-    /* width: 400px; */
-    margin: 10px;
-    background: #fff;
-}
-.post1 {
-    display: flex;
-    flex-grow: 20;
-}
 img {
     width: 100%;
     height: auto;
+}
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .content {
     padding: 18px;
     padding-bottom: 50px;
 }
-.post1 .image {
-    display: flex;
-}
+
 .post {
+    min-width: 300px;
     flex-basis: 25%;
     flex-grow: 1;
-    flex-shrink: 0;
     position: relative;
+    margin: 10px;
+    background: #fff;
+    /* width: 100%; */
 }
+
 .post .comments {
     position: absolute;
     right: 25px;
@@ -48,6 +39,23 @@ img {
     left: 25px;
     bottom: 15px;
 }
+.post1 {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 4;
+    /* width: 800px; */
+}
+.post1 .image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: url(https://i.pinimg.com/originals/f8/06/fb/f806fb7fb4c8d4bfa13a547f6565319c.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.post1 p {
+    max-width: 300px;
+}
 
 
 
@@ -56,10 +64,14 @@ img {
 
 
 
+@media (max-width: 1010px) {
+
+  }
 @media (max-width: 600px) {
     .blogs {
         padding-left: 5px;
         padding-right: 5px;
         flex-direction: column;
     }
+
   }
